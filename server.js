@@ -11,9 +11,12 @@ const PORT = process.env.PORT || 4000;
 
 // ── Middleware ────────────────────────────────────────────────────────────────
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:3000"],
-  credentials: true,
-}));
+  origin: [
+    "http://localhost:5173",
+    "https://scholarai-frontend-r8w4.vercel.app"
+  ],
+  credentials: true
+}))
 app.use(express.json());
 
 // ── Routes ───────────────────────────────────────────────────────────────────
